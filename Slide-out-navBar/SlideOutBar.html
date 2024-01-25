@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slideOutStyles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <img class="activator" id="activator" src="https://s2.svgbox.net/loaders.svg?ic=bars&color=000000" alt=" ">
+        <nav id="slideBar">
+            <ul id="slideOut">
+                <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000"></a></li>
+                <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=github&color=000000"></a></li>
+                <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000"></a></li> 
+                <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000"></a></li>
+                <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js" integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+
+            var card = document.getElementById('activator')
+            var tl = gsap.timeline({defaults: {ease: "power2.inOut"}});
+
+            var toggle = false;
+            
+            card.addEventListener('click', () => {
+                toggle = !toggle;                          // set toggle state so it switches
+                if(toggle ? tl.play() : tl.reverse());      //turnery operator
+            })
+
+            tl.to('.activator', {                   // we are grabbing the activator class and telling it to change the background and the border radius
+                css: {background: 'linear-gradient(rgb(126, 100, 98) 0%, #0D598B 100%)',
+                    borderRadius: '5em 0 0 5em'}    //we are referencing the css document and updating it
+            })
+            tl.to('#slideBar', {                    // we are grabbing the sidebar and changing the css
+                css: {clipPath: 'ellipse(100% 100% at 50% 50%)'}       // here we update the CSS so the bar slides out
+            }, "-=.5")                              // Thid adjusts the timing for the silde out.
+            tl.to('nav img', {
+                css: {opacity: 1,                   // set the opacity so the icons show back up again
+                    transform: 'translateX(0)',     
+                    }
+            }, "-=.5")
+
+            tl.pause();
+            // tl is a function from gsap, and .to is one of its methods .tl=(timeline) we are creating a timeline animation that is going "to" where we specify
+        
+
+        </script>
+
+
+</body>
+</html>

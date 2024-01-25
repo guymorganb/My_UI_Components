@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    height:100vh;
+    background: gray;
+    color:white;
+    display: grid;
+    place-content: center;
+}
+
+header{
+    display: flex;
+}
+header .activator {
+    padding: 1em;
+    border: 3px solid black;
+    
+    border-radius: 100%;
+}
+.activator:hover{
+    background: rgb(126, 100, 98);
+    cursor: pointer;
+}
+img{            /* resize the icons */
+    width:100%;
+    max-width: 45px;
+}
+nav{
+    background:linear-gradient(rgb(126, 100, 98) 0%, #0D598B 100%);
+    border-radius: 0 5em 5em 0;
+    padding: .5em;
+    clip-path: ellipse(50% 50% at -50% 50%);
+}
+nav ul{
+    display: flex;
+    list-style:none;
+    margin: 0;
+    padding:0;
+}
+li a:hover{
+    background:olive; ;
+}
+ul li a{
+    display: block;
+    padding: .5em;
+    margin: 0 .5em;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+#slideOut img{
+    opacity: 0;
+    transform: translate(-10px);
+}
