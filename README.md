@@ -22,6 +22,7 @@ Here's what you can find inside:
 - `parallax-card**`: A card that opens with a parralax effect.
 - `signup-form**`: An clean, and simple sign up for.
 - `social-media-tooltip**`: Atractive social media tooltip icons.
+- `Sping_Game`: This 3D game allows the user to spin their choice of 3D smartphones and Iphones, and it calculates the angular speed and Rotations per minute with wind resistance.
 - `text-morph**`: Morphing text, in place, works well with emojis.
 - `video-button-animation**`: A buttong that expands open to full screen.
 - `video-card-hover**`: Hover teffect animation on this card.
