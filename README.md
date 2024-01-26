@@ -8,6 +8,7 @@ This repository is organized by individual components, each residing in its own 
 
 Here's what you can find inside:
 
+- `MatrixRain`: The iconic backdrop of the Matrix, code rain.
 - `Expand-card`: A dynamic card that expands to reveal more information on user interaction.
 - `Flexible-Accordion`: An accordion component that allows for flexible content expansion.
 - `OMG Parallax`: An eye-catching parallax effect implementation for web pages.
@@ -29,6 +30,7 @@ Here's what you can find inside:
 - `video-button-animation**`: A buttong that expands open to full screen.
 - `wavy-hero`: Backdrop with a blurred wave, suble and appealing.
 - `Expanding_Burger_Nav**`: This navbar expands when clicked folloing a nice motion path.
+
 
 Items marked with `**` are newly added or components Ive marked for updates.
 
