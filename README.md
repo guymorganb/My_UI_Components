@@ -31,7 +31,9 @@ Here's what you can find inside:
 - `wavy-hero`: Backdrop with a blurred wave, suble and appealing.
 - `React**`: This directory holds react components
     -- `Expanding_Burger_Nav**`: This navbar expands when clicked folloing a nice motion path.
-    -- `Tailwinds_ChakraNav_withMotion`: A resonsive navbar with framer motion variants, mad to be simple, customizable and flexible
+    -- `Tailwinds_ChakraNav_withMotion`: A resonsive navbar with framer motion variants, mad to be 
+    simple, customizable and flexible
+    -- `Chakra_social-media-tooltip`: Attractive icons with tooltips, built with React and Chakra.
 
 
 Items marked with `**` are newly added or components Ive marked for updates.
