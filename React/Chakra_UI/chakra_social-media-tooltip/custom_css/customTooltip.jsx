@@ -1,3 +1,6 @@
+/**
+ * Author Guyycodes
+ */
 import { chakra } from '@chakra-ui/react';
 export function CustomTooltip({ children }) {
     return (

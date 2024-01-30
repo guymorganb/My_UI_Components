@@ -29,11 +29,13 @@ Here's what you can find inside:
 - `video-card-hover**`: Hover teffect animation on this card.
 - `video-button-animation**`: A buttong that expands open to full screen.
 - `wavy-hero`: Backdrop with a blurred wave, suble and appealing.
-- `React**`: This directory holds react components
+- `React**`: This directory holds modular react components
     -- `Expanding_Burger_Nav**`: This navbar expands when clicked folloing a nice motion path.
-    -- `Tailwinds_ChakraNav_withMotion`: A resonsive navbar with framer motion variants, mad to be 
+    - `Chakra_UI`: This directory contains modular UI components made with Chakra UI & React
+        -- `Tailwinds_ChakraNav_withMotion`: A resonsive navbar with framer motion variants, mad to be 
     simple, customizable and flexible
-    -- `Chakra_social-media-tooltip`: Attractive icons with tooltips, built with React and Chakra.
+        -- `Chakra_social-media-tooltip`: Attractive icons with tooltips, built with React and Chakra.
+        -- `Custom_underlines`: This directory contains 2 types of custom underlines, "right to left" and "center to edges" both are full customizeable
 
 
 Items marked with `**` are newly added or components Ive marked for updates.

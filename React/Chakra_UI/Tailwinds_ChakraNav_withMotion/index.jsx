@@ -1,8 +1,10 @@
+/**
+ * Author Guyycodes
+ */
 import React, {useState} from "react";
 import {Box, VStack, HStack, Flex, Image} from "@chakra-ui/react";
 import { LeftSide } from "./leftSide";
 import { Nav } from "./nav";
-
 export const LandingPage = () => {
 
     return(

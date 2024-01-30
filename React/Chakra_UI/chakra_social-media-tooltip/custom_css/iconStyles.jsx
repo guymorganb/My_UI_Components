@@ -1,3 +1,6 @@
+/**
+ * Author Guyycodes
+ */
 export const IconStyle = {
     position: "relative",
     bg: "white",

@@ -1,8 +1,9 @@
+/**
+ * Author Guyycodes
+ */
 import { FaInstagram, FaGithub } from 'react-icons/fa';
 import { IconStyle } from './custom_css/iconStyles';
 import { CustomTooltip } from './custom_css/customTooltip';
-
-
 export const Nav = () => {
 
     return (
