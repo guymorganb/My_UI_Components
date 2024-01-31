@@ -36,6 +36,7 @@ Here's what you can find inside:
     simple, customizable and flexible
         -- `Chakra_social-media-tooltip`: Attractive icons with tooltips, built with React and Chakra.
         -- `Custom_underlines`: This directory contains 2 types of custom underlines, "right to left" and "center to edges" both are full customizeable
+        -- `typewriter`: A modular Charkra UI/React component creating the typewriter effect, wrap your text with it and it becomes a typewriter
 
 
 Items marked with `**` are newly added or components Ive marked for updates.
