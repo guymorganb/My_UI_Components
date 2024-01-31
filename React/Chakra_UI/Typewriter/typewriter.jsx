@@ -20,20 +20,8 @@ const blinkCursorAnimation = keyframes`
   0%, 100% { border-color: transparent; }
   50% { border-color: black; }
 `;
-export const TypewriterText = ({ children }) => {
+const TypewriterChild = ({ children }) => {
     const [key, setKey] = useState(0); // key state to re-trigger the animation
-  
-    useEffect(() => {
-      const animationDuration = 4000; // Duration of the typewriter animation in milliseconds
-      const delay = 1000; // Delay before restarting the animation in milliseconds
-      const totalDuration = animationDuration + delay;
-  
-      const interval = setInterval(() => {
-        setKey(prevKey => prevKey + 1); // Increment the key to re-trigger the animation
-      }, totalDuration);
-  
-      return () => clearInterval(interval); // Cleanup the interval on component unmount
-    }, []);
   
     return (
       <Box
@@ -45,9 +33,9 @@ export const TypewriterText = ({ children }) => {
           & > span {
             display: inline-block;
             overflow: hidden;
-            whiteSpace: nowrap;
+            whiteSpace: normal;
             animation: ${typewriterAnimation} 4s steps(44) 1s forwards,
-                       ${blinkCursorAnimation} 0.75s step-end infinite;
+                       ${blinkCursorAnimation} 1s step-end infinite;
             }
             `}
       >
@@ -55,3 +43,25 @@ export const TypewriterText = ({ children }) => {
       </Box>
     );
 };
+
+export const TypewriterText = ({ children }) => {
+    const [key, setKey] = useState(0); // key state to re-trigger the animation
+  
+    useEffect(() => {
+      const animationDuration = 12000; // Duration of the typewriter animation in milliseconds
+      const delay = 4000; // Delay before restarting the animation in milliseconds
+      const totalDuration = animationDuration + delay;
+  
+      const interval = setInterval(() => {
+        setKey(prevKey => prevKey + 1); // Increment the key to re-trigger the animation
+      }, totalDuration);
+  
+      return () => clearInterval(interval); // Cleanup the interval on component unmount
+    }, []);
+  
+    return React.Children.map(children, child => (
+      <TypewriterChild key={key}>
+        {child}
+      </TypewriterChild>
+    ));
+  };
